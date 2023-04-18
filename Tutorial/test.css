@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+  }
+  .grid-container {
+    display: inline-grid;
+  }
+
+  .grid-container {
+    display: grid;
+    column-gap: 50px;
+  }

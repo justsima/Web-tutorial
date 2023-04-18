@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    grid-area: logo
+}
+
+.mobnav, .nav, .main, .aside, .a, .b, .c, .d, .e, .f{
+    color: white;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobnav{
+    grid-area: mobnav;
+}
+
+.main{
+    grid-area: main;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+
+.wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+    "logo logo logo mobnav"
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main";
+    gap: 10px;
+}
+.aside, .a, .b, .c, .d, .e, .f{
+    display: none;
+}
+.main{
+    border: 30px white solid;
+}
+
+@media(min-width: 760px){
+    .wrapper{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+        grid-template-areas:
+        "logo nav nav nav"
+        "main main main main"
+        "aside aside aside aside"
+        "a a b b"
+        "c c d d";
+        gap: 10px;
+    }
+    .aside, .a, .b, .c, .d{
+        display: grid;
+    }
+    .mobnav{
+        display: none;
+    }
+    .main{
+        border: 0;
+    }
+}
+
+@media(min-width: 960px){
+    .wrapper{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas:
+        "logo nav nav"
+        "main main aside"
+        "a b c"
+        "d e f";
+        gap: 10px;
+    }
+    .e, .f{
+        display: grid;
+    }
+}

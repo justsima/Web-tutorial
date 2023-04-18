@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.logo{
+    font-weight: bolder;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+}
+
+nav{
+    display: flex;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    flex-grow: 1;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 3;
+    gap: 10px;
+    padding: 50px 10px;
+}
+
+.ig{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.fb{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.tw{
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+.article{
+    flex-grow: 4;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.image{
+    flex-grow: 1;
+}
+
+.pro{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 50%;
+
+}
+
+.btn{
+    background-color: lightgreen;
+    text-decoration: none;
+    border: none;
+    line-height: 50px;
+}

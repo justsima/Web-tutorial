@@ -1,0 +1,18 @@
+span.w{
+    text-transform: uppercase;
+    background-image: url('pic.png');
+    background-size: cover;
+    background-clip:text ;
+    color: transparent;
+
+}
+span.c{
+    text-transform: uppercase;
+    background-image: url('Wall.jpg');
+
+
+}
+h1{
+    size: 100px;
+}
+

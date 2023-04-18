@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="" method="get">
+        <fieldset>
+            <legend><h2>Registration Form</h2></legend>
+        <table>
+
+            <!-- Fname -->
+            <div class="Fname">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input tabindex="1" autocomplete="off" list="names" autofocus required size="30" maxlength="10" placeholder="Enter Name" type="text"></td>
+            </tr>
+            </div>
+
+            <!-- Lname -->
+            <div class="Lname">
+            <tr>
+            <td><label for="lname">Last Name</label></td>
+
+            <td><input  readonly value="abebe"  type="text" name="lname" id="lname"></td>
+            </tr>
+            </div>
+
+            <!-- Password -->
+            <div class="Pass">
+                <tr>
+                    <td><label for="lname">Password</label></td>
+                    <td><input tabindex="1" disabled type="password" name="pass" id="pass"></td>
+
+                </tr>
+            </div>
+
+            
+
+            <!-- Email -->
+            <div class="Email">
+                <tr>
+                <td><label for="email">Email</label></td>
+                <td><input multiple type="email" name="email" id="email"></td>
+                </tr>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="Phone">
+                <tr>
+                    <td><label for="phone">phone</label></td>
+                    <td><input type="tel" name="phone" id="phone" 
+                        pattern="[+][0-9]{3}-[0-9]{4}-[0-9]{3}" ></td> 
+                </tr>
+            </div>
+
+            <!-- Age -->
+            <div class="Age">
+                <tr>
+                    <td><label for="Age"> Age </label></td>
+                    <td><input type="range" name="age" id="age" 
+                        min="18" max="54"></td>
+                </tr>
+            </div>
+
+            <div class="Age">
+                <tr>
+                    <td><label for="Age"> Age </label></td>
+                    <td><input type="number" name="age" id="age"
+                         min="18" max="54"></td>
+                </tr>
+            </div>
+
+            <!-- Date -->
+            <div class="date">
+                <tr>
+                    <td><label for="date"> Date </label></td>
+                    <td><input type="date" name="date" id="date" 
+                        min="2023-02-05" max="2023-04-05"></td>
+                </tr>
+            </div>
+
+            <!-- Radiobutton and Checkbox -->
+            <div class="radio">
+                <tr>
+                    <td>Enter Gender</td>
+                    <td>
+                        <fieldset>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label><br>
+                        </fieldset>
+
+                    </td>
+                    
+                </tr>
+            </div>
+
+            <div class="check">
+                <tr>
+                    <td>Enter Your Drinks</td>
+                    <td>
+                        <fieldset>
+                            <input type="checkbox" name="drinks" id="tea">
+                            <label for="tea">Tea</label>
+                            <input checked type="checkbox" name="drinks" id="milk">
+                            <label for="milk">Milk</label>
+                            <input type="checkbox" name="drinks" id="coffee">
+                            <label for="coffee">Coffee</label>
+                        </fieldset>
+                    </td>
+                </tr>
+            </div>
+
+            <!-- Drop Down -->
+            <div class="drop">
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><select name="country" id="country">
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Zambia">Zambia</option>
+                        <option selected value="Egypt">Egypt</option>
+                        <option value="South Africa">South Africa</option>
+                    </select></td>
+                </tr>
+            </div>
+
+            <!-- Comment -->
+            <div class="comment">
+                <tr>
+                    <td><label for="comment">Comment</label></td>
+                    <td><textarea name="comment" id="comment" cols="40" rows="10"></textarea></td>
+                </tr>
+            </div>
+
+            <!-- Button -->
+            <div class="Button">
+                <tr>
+                    <td>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                    <input type="image" src="" alt="">
+                    <input type="button" name="" value="button">
+                    <button>Is Button</button>
+                    <input type="file" name="file">
+                    <input type="hidden" name="hidden" value="abebe">   
+
+                    
+                </td>
+                </tr>
+            </div>
+        </table>
+        </fieldset>
+
+        
+
+        
+
+    </form>
+
+
+<datalist id="names">  
+    <option value="abebe"></option>
+    <option value="kebede"></option>
+    <option value="Alemu"></option>
+</datalist>
+
+
+
+</body>
+</html>

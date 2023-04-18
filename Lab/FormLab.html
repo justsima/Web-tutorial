@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lab</title>
+</head>
+<body>
+    <form action="" method="get">
+        <table border="1" >
+            <tr align="center">
+                <th colspan="2">Pizza Shop 2.0</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                        <input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Pizza Toping</td>
+                <td>
+                    <fieldset>
+                        <input type="radio" name="Toping1" id="Toping1">
+                        <label for="Toping1">Supreme</label><br>
+                        <input type="radio" name="Toping2" id="Toping2">
+                        <label for="Toping2">Vegiterian</label><br>
+                        <input type="radio" name="Toping3" id="Toping3">
+                        <label for="Toping3">Hawain</label><br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                    <td><select name="Sauce" id="Sauce">
+                        <option value="Tomato" selected>Tomato</option>
+                        <option value="onion">onion</option>      
+                    </select>
+                </td>
+            </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <fieldset>
+                    <input type="checkbox" name="Extras" id="Extras">
+                    <label for="extra1">Extra Cheese</label>
+                    <input type="checkbox" name="Extras" id="Extras">
+                    <label for="Gluten Free">Gluten Free base
+                    </label>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Delivery Instructions: <br>
+                <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Send">
+            </td>
+        </tr>
+
+
+        </table>
+
+    </form>
+</body>
+</html>

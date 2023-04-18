@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    grid-area: logo;
+    background-color: red;
+}
+.title{
+    grid-area: title;
+    background-color: orange;    
+}
+main{
+    background-color: blue;
+}
+.m1{
+    grid-area: m1;
+
+}
+.m2{
+    grid-area: m2;
+
+}
+.m3{
+    grid-area: m3;
+
+}
+.m4{
+    grid-area: m4;
+
+}
+.aside{
+    grid-area: aside;
+    background-color: green;
+}
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 3fr 0.5fr;
+    grid-template-areas: "logo"
+    "title"
+    "m1"
+    "m2";
+    gap: 10px;
+    border: 30px white solid;
+}
+.m3,.m4,.aside{
+    display: none;
+}
+@media(min-width: 760px){
+    .wrapper{
+        grid-template-rows: 1fr 2fr 4fr 2fr;
+        grid-template-areas: 
+        "logo title title title"
+        "aside aside aside aside"
+        "m1 m1 m2 m2"
+        "m3 m3 m3 m3";
+    }
+
+    .m3,.aside{
+        display: grid;
+    }
+    .m4{
+        display: none;
+    }
+}
+@media(min-width:960px){
+    .wrapper{
+        grid-template-rows: 1fr 0.5fr 3fr 2fr;
+        grid-template-areas: 
+        "logo logo ... title title title title"
+        "... ... ... ... ... ... ..."
+        "m1 m1 m2 m2 m3 m3 aside"
+        "m4 m4 m4 m4 m4 m4 aside";
+        gap: 30px;
+    }
+    .m4{
+        display: grid;
+    }
+}
+

@@ -1,0 +1,49 @@
+table{
+    border: 1px solid #333;
+    width:50%;
+    border-collapse: collapse;
+    line-height: 40px;
+}
+#one tr:nth-child(2n+1){
+    background-color: green;
+}
+#one tr:nth-child(2n+2){
+    background-color: white;
+}
+#one tr:nth-child(2n+1):hover{
+    background-color: red;
+}
+#one tr:nth-child(2n+2):hover{
+    background-color: yellow;
+}
+table:hover tr:nth-child(odd){
+    background-color: yellow;
+}
+table:hover tr:nth-child(even){
+    background-color: red;
+}
+p::before{
+    
+    content: "Before  ";
+    font-size: 70px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+p::after{
+    content: "   After";
+    font-size: 70px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+p:active{
+    color: brown;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-decoration: underline 3px solid #333;
+    
+}

@@ -1,0 +1,106 @@
+/* h1{
+    background-color: green;
+    font-size: 30px;
+}
+h2{
+    color: red;
+    font-size: 40px;
+}
+h3{
+    color: purple;
+}
+.wrapper{
+    background-color: lightsalmon;
+}
+p{
+    color: darkcyan;
+    font-size: 30px;
+}
+.one{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#main *{
+    color: blueviolet;
+}
+p,h3{
+    background-color: violet;
+    font-style: italic;
+}
+.wrapper.three.p {
+    background-color: yellow;
+}
+.one > p.lor1{
+    background-color: yellow;
+}
+.three > p.lor3{
+    background-color: yellow;
+}
+h3 ~ p{
+    color: black;
+}
+a[href]{
+    color: black;
+}
+.two a[href]{
+    background-color: yellow;
+} */
+/* all the styles for previous classes */
+:root{
+    font-size: 20px;
+    --blue:blue;
+    --yellow:yellow;
+
+
+}
+.wrap{
+    /* font-size: 20px; */
+    font-style: italic;
+    background-color: paleturquoise;
+    /* font-size: 50vmin;
+    font-size: 50vmax; */
+    height: 60vh;
+    
+   background-image: url('Wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+h2{
+    /* font-size: 64px;
+    font-size: 400%; */
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline solid white;
+    text-shadow: 2px 4px 9px white;
+    font-variant: small-caps;
+    /*background-color: black;*/
+    color: white;
+    background-image: url('pics.png');
+    background-repeat: no-repeat;
+    background-position: 360px ;
+    
+
+
+}
+h2:hover{
+    animation: anim 1s infinite reverse;
+}
+@keyframes anim{
+     from{
+        background-position: 0%;
+     }
+     to{
+        background-position: 100%;
+     }
+}
+p{
+    text-align: center;
+    line-height: 40px;
+    text-indent: 20px;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    direction: rtl;
+    color: wheat;
+
+}

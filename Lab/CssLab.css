@@ -1,0 +1,14 @@
+h1{
+    color: #c127aa;
+    size: 30px;
+
+}
+.inner p{
+ background-color: green;
+}
+.direct>p {
+    background-color: lightblue;
+}
+.one~ p{
+    background-color: lightblue;
+}
