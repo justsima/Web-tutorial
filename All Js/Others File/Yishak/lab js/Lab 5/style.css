@@ -1,0 +1,58 @@
+.first tr:nth-child(3n-1){
+    background-color: #1cbc31;
+}
+
+.second tr:nth-child(){
+    background-color: #1cbc31;
+}
+
+table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 80%;
+    line-height: 40px;
+}
+
+p::before{
+    content: "Before ";
+    font-size: 2rem;
+    color: red;
+}
+
+p:active{
+    color: yellow;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+
+p::after{
+    content: "After";
+    font-size: 2rem;
+    color: red;
+}
+
+p{
+    text-transform: capitalize;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    animation: anim 4s infinite;
+}
+
+@keyframes anim{
+    0%{
+        color: rgb(0, 255, 38);
+        text-decoration: underline 10px rgb(0, 255, 38);
+    }
+    50%{
+        color: yellow;
+        text-decoration: underline 10px yellow;
+
+    }
+    100%{
+        color: rgb(128, 11, 0);
+    }
+}

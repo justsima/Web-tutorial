@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background-color: #495d5b;
+    width: 100%;
+}
+body h2{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.wrapper{
+background-color: #1e2051;
+width: 85%;
+margin: 0 auto;
+margin-top: 100px;
+padding: 10px 50px;
+
+}
+.wrapper .main{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 5px 15px;
+}
+.main .textbox{
+
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+  
+}
+.main .allbuttons{
+ 
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding: 0 10px;
+}
+ .allbuttons  .row1 ,.allbuttons  .row2 , .allbuttons .row3 ,.allbuttons .row4{
+display: flex;
+justify-content: space-around;
+ }
+ .allbuttons .butn{
+    padding: 8px 14px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 17px;
+
+ }
+ .allbuttons .butn:hover{
+   cursor: pointer;
+
+ }
+ .allbuttons .butn:active{
+    cursor: pointer;
+    animation: bgcolorActive 4s;
+ 
+  }
+ .allbuttons .blue{
+    background-color: #0048e1;
+    color: #fff;
+
+ }
+ .allbuttons .grey{
+    background-color: grey;
+    color: #fff;
+
+ }
+
+@keyframes bgcolorActive{
+    from{background-color: green;}
+    to{background-color: #0048e1;}
+}
+
+@media(min-width:500px){
+    .wrapper{
+
+        width: 60%;
+    }
+ }
+
+ @media(min-width:800px){
+    .wrapper{
+
+        width: 45%;
+    }
+
+
+ }
+ @media(min-width:1000px){
+    .wrapper{
+
+        width: 25%;
+    }
+
+
+ }

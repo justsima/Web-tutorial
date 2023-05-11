@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+}
+
+.header{
+    grid-area: header;
+}
+
+.header .nav h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.header .nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.nav img{
+    display: none;
+}
+
+.article{
+    grid-area: article;
+}
+
+.link{
+    grid-area: link;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.link img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 50px
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+
+.article h1{
+    font-size: 3rem;
+}
+
+.article h3{
+    font-size: 2.5rem;
+}
+
+.article p{
+    font-size: 1.5rem;
+}
+
+.article button{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background: #38776a;
+    box-shadow: 7px 9px 59px 5px #38776a;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+}
+
+.image{
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-area: image;
+	width:250px;
+    border-radius: 45%;
+}
+
+.wrapper{
+    row-gap: 20%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    'header header header'
+    'link article image';
+}
+
+@media(max-width:789px){
+    .wrapper{
+        row-gap: 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.8fr 0.5fr 0.3fr;
+        grid-template-areas: 
+        'header'
+        'article'
+        'image'
+        'link';
+    }
+
+    .header .nav ul{
+        display: none;
+    }
+
+    .nav .menu img{
+        display: block;
+        width: 50px;
+    }
+
+    .menu:hover+ul{
+        display: block;
+        position: absolute;
+        background: white;
+        color: black;
+        right:0;
+        width: 100%;
+        top:80px;
+        padding: 25px;
+    }
+
+    .article{
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        gap: 10px;
+    }
+
+    .image{
+        margin-left: 100px;
+        margin-top: 0px;
+        border-radius: 30%;
+        width: 250px;
+    }
+    .article{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .link{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}

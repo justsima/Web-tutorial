@@ -1,0 +1,37 @@
+h1{
+    text-transform: uppercase;
+    font-size: 7rem;
+}
+
+.one{
+    background-image: url(./fire.jpg);
+    background-size: 50pxpx;
+    background-clip: text;
+    color: transparent;
+    animation: anim 5s linear infinite;
+}
+
+.one:hover{
+    animation: anim 5s reverse infinite;
+}
+
+.two:hover{
+    animation: anim 5s reverse infinite;
+}
+
+.two{
+    background-image: url(./PXL_20230210_094046499-02.jpeg);
+    background-size: 50pxpx;
+    background-clip: text;
+    color: transparent;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}

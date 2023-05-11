@@ -1,0 +1,112 @@
+/*created by zelalem A.
+for hilcoe students exercise  */
+
+body{
+    background-color:darkgreen;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+
+}
+.container{
+    margin: 0 auto;
+    margin-top: 100px;
+   
+    width:70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px  8px 10px #333;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    text-align: center;
+}
+.error{
+    color: red;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+   
+}
+.input-control label,#radios label{
+  font-weight: 900;
+   
+}
+.input-control input,#radios input{
+    padding: 10px;
+   border: 3px solid #333;
+   border-radius: 5px;
+   font-size: 12px;
+   box-shadow: -2px 2px  2px  #dfdcdc;
+   opacity: 0.8;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   text-transform: capitalize;
+   
+}
+#radios{
+    margin-top: 30px;
+
+}
+#radios div{
+    width: 100%;
+}
+.buttons{
+
+    display: flex;
+}
+button[type='submit']{
+    width:100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color:#fff;
+    font-size: 15px;
+
+}
+button[type='reset']{
+    width:100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color:#fff;
+    font-size: 15px;
+
+}
+.error{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media(min-width:769px)
+{
+
+    .container{
+        width: 40%;
+    }
+
+
+}
+@media(min-width:1000px)
+{
+
+    .container{
+        width: 30%;
+    }
+
+
+}
+   
